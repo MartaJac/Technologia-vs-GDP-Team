@@ -1,9 +1,9 @@
 # Technologia-vs-GDP-Team
-## Temat pracy dyplomowej: Technologia vs GDP 
+> ## Temat pracy dyplomowej: Technologia vs GDP 
 1. dostęp do technologii komunikacyjnych vs. GDP w czasie 
 2. dostęp do środków transportu i ich efektywność energetyczna/emisyjność
 
-## Podział na zadania:
+> ## Podział na zadania:
 **1. Osoba odpowiedzialna za zarządzanie projektem i koordynację (Marta):**
 - Pobranie danych z Our World in Data/innych źródeł i umieszczenie ich w repozytorium
 - Założenie repozytorium w GitHub
