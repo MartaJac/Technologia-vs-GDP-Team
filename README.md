@@ -40,3 +40,41 @@
 - Badanie ewentualnych korelacji między dostępem do środków transportu, ich efektywnością energetyczną, a wzrostem gospodarczym
 
 **Projekt dostarczy istotnych informacji na temat wpływu dostępu do nowoczesnych technologii komunikacyjnych i środków transportu na rozwój gospodarczy, jednocześnie zwracając uwagę na aspekty zrównoważonego rozwoju, takie jak efektywność energetyczna i emisyjność.**
+
+> ## Instrukcja integracji z Python:
+**1. Pobieranie repozytorium:**
+- Sklonuj repozytorium GitHub do swojego lokalnego środowiska za pomocą komendy git clone w terminalu (Visual Studio Code):
+```
+git clone https://github.com/nazwa_uzytkownika/nazwa_repozytorium.git
+```
+- Przejdź do katalogu repozytorium:
+```
+cd nazwa_repozytorium
+```
+**2. Przetwarzanie danych w Pythonie:**
+- Użyj Pythona i odpowiednich bibliotek, takich jak pandas do przetworzenia danych z plików CSV. Na przykład:
+```
+import pandas as pd
+
+# Wczytaj dane z pliku CSV
+df = pd.read_csv('nazwa_pliku.csv')
+
+# Przetwórz dane - wykonaj operacje na DataFrame
+# ...
+
+# Zapisz przetworzone dane do nowego pliku CSV
+df.to_csv('przetworzone_dane.csv', index=False)
+```
+**3.Zapisywanie zmian w repozytorium (Visual Studio Code):**
+- Dodaj zmienione pliki do śledzenia:
+```
+git add nazwa_pliku.csv przetworzone_dane.csv
+```
+- Zatwierdź zmiany:
+```
+git commit -m "Opis zmian"
+```
+- Wypchnij zmiany do repozytorium na GitHub:
+```
+git push origin branch_name
+```
