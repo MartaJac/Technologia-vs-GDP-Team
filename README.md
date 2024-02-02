@@ -66,7 +66,7 @@ df = pd.read_csv('nazwa_pliku.csv')
 df.to_csv('przetworzone_dane.csv', index=False)
 ```
 **3.Zapisywanie zmian w repozytorium (Visual Studio Code):**
-- Dodaj zmienione pliki do śledzenia:
+- Dodaj zmienione pliki do śledzenia. git umożliwia dodanie wielu plików na raz:
 ```
 git add nazwa_pliku.csv przetworzone_dane.csv
 ```
@@ -76,5 +76,5 @@ git commit -m "Opis zmian"
 ```
 - Wypchnij zmiany do repozytorium na GitHub:
 ```
-git push origin branch_name
+git push main
 ```
