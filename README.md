@@ -90,5 +90,5 @@ git commit -m "Opis zmian"
 ```
 - Wypchnij zmiany do repozytorium na GitHub:
 ```
-git push main
+git push origin main
 ```
