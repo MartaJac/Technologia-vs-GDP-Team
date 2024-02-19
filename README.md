@@ -79,7 +79,7 @@ df.to_csv(
 **3.Zapisywanie zmian w repozytorium (Visual Studio Code):**
 - Dodaj zmienione pliki do śledzenia. git umożliwia dodanie wielu plików na raz:
 ```
-git add nazwa_pliku.csv przetworzone.csv
+git add .
 ```
 ```
 git status
