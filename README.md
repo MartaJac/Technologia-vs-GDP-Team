@@ -43,32 +43,46 @@
 
 > ## Instrukcja integracji z Python:
 **1. Pobieranie repozytorium:**
-- Sklonuj repozytorium GitHub do swojego lokalnego środowiska za pomocą komendy git clone w terminalu (Visual Studio Code):
+- Sklonuj repozytorium GitHub do swojego lokalnego środowiska za pomocą Visual Studio Code (Source Control-> Trust-> Clone repository)
 ```
-git clone https://github.com/nazwa_uzytkownika/nazwa_repozytorium.git
+https://github.com/MartaJac/Technologia-vs-GDP-Team.git
 ```
-- Przejdź do katalogu repozytorium:
-```
-cd nazwa_repozytorium
-```
-**2. Przetwarzanie danych w Pythonie:**
-- Użyj Pythona i odpowiednich bibliotek, takich jak pandas do przetworzenia danych z plików CSV. Na przykład:
-```
-import pandas as pd
+- Wybierz lokalizację, gdzie chcesz sklonować repozytorium na swoim komputerze i naciśnij Enter. Po zakończeniu procesu klonowania repozytorium zostanie otwarte w Visual Studio Code.
 
-# Wczytaj dane z pliku CSV
-df = pd.read_csv('nazwa_pliku.csv')
+**2. Przykładowe przetwarzanie danych w Pythonie:**
+- Użyj Pythona i odpowiednich bibliotek, takich jak pandas do przetworzenia danych z plików CSV:
+```
+import pandas
+import numpy
+import datetime
+```
 
-# Przetwórz dane - wykonaj operacje na DataFrame
-# ...
+```
+# Wczytaj dane z pliku CSV, np.:
+df = pd.read_csv(
+                r"D:\Repositorium\Projekt_UWSB\Technologia-vs-GDP-Team\pliki CSV - do przetworzenia\emisja CO2 wg rodzaju transportu.csv", 
+                header=3,
+)
 
-# Zapisz przetworzone dane do nowego pliku CSV
-df.to_csv('przetworzone_dane.csv', index=False)
+df.head(15)
+
+```
+- Przetwórz dane - wykonaj operacje na DataFrame
+- Zapisz przetworzone dane do nowego pliku CSV (dodaj na końcu nazwy pliku "przetworzone"):
+```
+df.to_csv(
+    'D:\Repositorium\Projekt_UWSB\Technologia-vs-GDP-Team\pliki CSV - do przetworzenia\emisja CO2 wg rodzaju transportu_przetworzone.csv',
+    header=True, 
+    index=False
+)
 ```
 **3.Zapisywanie zmian w repozytorium (Visual Studio Code):**
 - Dodaj zmienione pliki do śledzenia. git umożliwia dodanie wielu plików na raz:
 ```
-git add nazwa_pliku.csv przetworzone_dane.csv
+git add nazwa_pliku.csv przetworzone.csv
+```
+```
+git status
 ```
 - Zatwierdź zmiany:
 ```
