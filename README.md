@@ -39,15 +39,14 @@
 
 **Projekt dostarczy istotnych informacji na temat wpływu dostępu do nowoczesnych technologii komunikacyjnych i środków transportu na rozwój gospodarczy, jednocześnie zwracając uwagę na aspekty zrównoważonego rozwoju, takie jak efektywność energetyczna i emisyjność.**
 
-> ## Instrukcja integracji z Python:
-**1. Pobieranie repozytorium:**
+> ## Pobieranie repozytorium:
 - Sklonuj repozytorium GitHub do swojego lokalnego środowiska za pomocą Visual Studio Code (Source Control-> Trust-> Clone repository)
 ```
 https://github.com/MartaJac/Technologia-vs-GDP-Team.git
 ```
 - Wybierz lokalizację, gdzie chcesz sklonować repozytorium na swoim komputerze i naciśnij Enter. Po zakończeniu procesu klonowania repozytorium zostanie otwarte w Visual Studio Code.
 
-**2. Przykładowe przetwarzanie danych w Pythonie:**
+> ## CSV w Pythonie:
 - Użyj Pythona i odpowiednich bibliotek, takich jak pandas do przetworzenia danych z plików CSV:
 ```
 import pandas
@@ -74,7 +73,7 @@ df.to_csv(
     index=False
 )
 ```
-**3.Zapisywanie zmian w repozytorium (Visual Studio Code):**
+> ## Zapisywanie zmian w repozytorium (Visual Studio Code):
 - Dodaj zmienione pliki do śledzenia. git umożliwia dodanie wielu plików na raz:
 ```
 git add .
@@ -96,8 +95,8 @@ git pull origin main
 ```
 - Jeśli wyskoczy komunikat who are you:
 ```
-git config --global user.name "Your Name"
-```
-```
 git config --global user.email "your_email@example.com"
+```
+```
+git config --global user.name "Your Name"
 ```
