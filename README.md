@@ -12,7 +12,7 @@
 - Przygotowanie prezentacji końcowej (Opis projektu, osoby wykonujące jako autorzy, Link do MS DevOps, Diagram dobranej architektury rozwiązania, Screenshoty z projektu)
 
 **2. Dwie osoby odpowiedzialne za analizę danych w Phyton (Wioleta i Basia):**
-- Analiza danych w Pythonie przy użyciu bibliotek takich jak Pandas (obróbka CSV w Phytonie: ładowanie danych z CSV, modyfikacja DataFrameu – zmiana nazw kolumn, uzupełnianie pustych kolumn, itp., ładowanie danych do plików)
+- Analiza danych w Pythonie przy użyciu bibliotek takich jak Pandas (obróbka CSV w Phytonie: ładowanie danych z CSV, modyfikacja DataFrameu – zmiana nazw kolumn, uzupełnianie pustych kolumn, usuwanie zbędnych kolumn, itp., ładowanie danych do plików)
 
 **3. Osoba odpowiedzialna za przygotowanie tabel w bazie danych + przetwarzanie danych w SQL + ETL (Adrian):**
 
@@ -59,7 +59,7 @@ import datetime
 # Wczytaj dane z pliku CSV, np.:
 df = pd.read_csv(
                 r"D:\Repositorium\Projekt_UWSB\Technologia-vs-GDP-Team\pliki CSV - do przetworzenia\emisja CO2 wg rodzaju transportu.csv", 
-                header=3,
+                header=1,
 )
 
 df.head(15)
@@ -90,7 +90,14 @@ git commit -m "Opis zmian"
 ```
 git push origin main
 ```
-- Aktualizacja repozytorium lokalnego po wprowadzeniu zmian przez innego użytkownika
+- Aktualizacja repozytorium lokalnego po wprowadzeniu zmian przez innego użytkownika:
 ```
 git pull origin main
+```
+- Jeśli wyskoczy komunikat who are you:
+```
+git config --global user.name "Your Name"
+```
+```
+git config --global user.email "your_email@example.com"
 ```
