@@ -14,9 +14,7 @@
 **2. Dwie osoby odpowiedzialne za analizę danych w Phyton (Wioleta i Basia):**
 - Analiza danych w Pythonie przy użyciu bibliotek takich jak Pandas (obróbka CSV w Phytonie: ładowanie danych z CSV, modyfikacja DataFrameu – zmiana nazw kolumn, uzupełnianie pustych kolumn, itp., ładowanie danych do plików)
 
-**3. Dwie osoby odpowiedzialne za przygotowanie danych w bazie danych (MySQL) (Adrian):**
-- Czyszczenie i przetwarzanie danych z użyciem MySQL
-- Załadowanie przygotowanych danych do bazy danych
+**3. Osoba odpowiedzialna za przygotowanie tabel w bazie danych + przetwarzanie danych w SQL + ETL (Adrian):**
 
 **4. Dwie osoby odpowiedzialne za wizualizację danych w PowerBI (Aga i Marta):**
 - Import danych z analizy wykonanej w MySQL do narzędzia PowerBI
@@ -91,4 +89,8 @@ git commit -m "Opis zmian"
 - Wypchnij zmiany do repozytorium na GitHub:
 ```
 git push origin main
+```
+- Aktualizacja repozytorium lokalnego po wprowadzeniu zmian przez innego użytkownika
+```
+git pull origin main
 ```
