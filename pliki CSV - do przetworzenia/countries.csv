@@ -1,0 +1,249 @@
+Continent,Country,ID_Country
+Africa,Algeria,12
+Africa,Egypt,818
+Africa,Libya,434
+Africa,Morocco,504
+Africa,Sudan,729
+Africa,Tunisia,788
+Africa,Western Sahara,732
+Africa,British Indian Ocean Territory,86
+Africa,Burundi,108
+Africa,Comoros,174
+Africa,Djibouti,262
+Africa,Eritrea,232
+Africa,Ethiopia,231
+Africa,French Southern Territories,260
+Africa,Kenya,404
+Africa,Madagascar,450
+Africa,Malawi,454
+Africa,Mauritius,480
+Africa,Mayotte,175
+Africa,Mozambique,508
+Africa,Réunion,638
+Africa,Rwanda,646
+Africa,Seychelles,690
+Africa,Somalia,706
+Africa,South Sudan,728
+Africa,Uganda,800
+Africa,United Republic of Tanzania,834
+Africa,Zambia,894
+Africa,Zimbabwe,716
+Africa,Angola,24
+Africa,Cameroon,120
+Africa,Central African Republic,140
+Africa,Chad,148
+Africa,Congo,178
+Africa,Democratic Republic of the Congo,180
+Africa,Equatorial Guinea,226
+Africa,Gabon,266
+Africa,Sao Tome and Principe,678
+Africa,Botswana,72
+Africa,Eswatini,748
+Africa,Lesotho,426
+Africa,Namibia,516
+Africa,South Africa,710
+Africa,Benin,204
+Africa,Burkina Faso,854
+Africa,Cabo Verde,132
+Africa,Côte d’Ivoire,384
+Africa,Gambia,270
+Africa,Ghana,288
+Africa,Guinea,324
+Africa,Guinea-Bissau,624
+Africa,Liberia,430
+Africa,Mali,466
+Africa,Mauritania,478
+Africa,Niger,562
+Africa,Nigeria,566
+Africa,Saint Helena,654
+Africa,Senegal,686
+Africa,Sierra Leone,694
+Africa,Togo,768
+Americas,Anguilla,660
+Americas,Antigua and Barbuda,28
+Americas,Aruba,533
+Americas,Bahamas,44
+Americas,Barbados,52
+Americas,"Bonaire, Sint Eustatius and Saba",535
+Americas,British Virgin Islands,92
+Americas,Cayman Islands,136
+Americas,Cuba,192
+Americas,Curaçao,531
+Americas,Dominica,212
+Americas,Dominican Republic,214
+Americas,Grenada,308
+Americas,Guadeloupe,312
+Americas,Haiti,332
+Americas,Jamaica,388
+Americas,Martinique,474
+Americas,Montserrat,500
+Americas,Puerto Rico,630
+Americas,Saint Barthélemy,652
+Americas,Saint Kitts and Nevis,659
+Americas,Saint Lucia,662
+Americas,Saint Martin (French Part),663
+Americas,Saint Vincent and the Grenadines,670
+Americas,Sint Maarten (Dutch part),534
+Americas,Trinidad and Tobago,780
+Americas,Turks and Caicos Islands,796
+Americas,United States Virgin Islands,850
+Americas,Belize,84
+Americas,Costa Rica,188
+Americas,El Salvador,222
+Americas,Guatemala,320
+Americas,Honduras,340
+Americas,Mexico,484
+Americas,Nicaragua,558
+Americas,Panama,591
+Americas,Argentina,32
+Americas,Bolivia (Plurinational State of),68
+Americas,Bouvet Island,74
+Americas,Brazil,76
+Americas,Chile,152
+Americas,Colombia,170
+Americas,Ecuador,218
+Americas,Falkland Islands (Malvinas),238
+Americas,French Guiana,254
+Americas,Guyana,328
+Americas,Paraguay,600
+Americas,Peru,604
+Americas,South Georgia and the South Sandwich Islands,239
+Americas,Suriname,740
+Americas,Uruguay,858
+Americas,Venezuela (Bolivarian Republic of),862
+Americas,Bermuda,60
+Americas,Canada,124
+Americas,Greenland,304
+Americas,Saint Pierre and Miquelon,666
+Americas,United States of America,840
+,Antarctica,10
+Asia,Kazakhstan,398
+Asia,Kyrgyzstan,417
+Asia,Tajikistan,762
+Asia,Turkmenistan,795
+Asia,Uzbekistan,860
+Asia,China,156
+Asia,"China, Hong Kong Special Administrative Region",344
+Asia,"China, Macao Special Administrative Region",446
+Asia,Democratic People's Republic of Korea,408
+Asia,Japan,392
+Asia,Mongolia,496
+Asia,Republic of Korea,410
+Asia,Brunei Darussalam,96
+Asia,Cambodia,116
+Asia,Indonesia,360
+Asia,Lao People's Democratic Republic,418
+Asia,Malaysia,458
+Asia,Myanmar,104
+Asia,Philippines,608
+Asia,Singapore,702
+Asia,Thailand,764
+Asia,Timor-Leste,626
+Asia,Viet Nam,704
+Asia,Afghanistan,4
+Asia,Bangladesh,50
+Asia,Bhutan,64
+Asia,India,356
+Asia,Iran (Islamic Republic of),364
+Asia,Maldives,462
+Asia,Nepal,524
+Asia,Pakistan,586
+Asia,Sri Lanka,144
+Asia,Armenia,51
+Asia,Azerbaijan,31
+Asia,Bahrain,48
+Asia,Cyprus,196
+Asia,Georgia,268
+Asia,Iraq,368
+Asia,Israel,376
+Asia,Jordan,400
+Asia,Kuwait,414
+Asia,Lebanon,422
+Asia,Oman,512
+Asia,Qatar,634
+Asia,Saudi Arabia,682
+Asia,State of Palestine,275
+Asia,Syrian Arab Republic,760
+Asia,Türkiye,792
+Asia,United Arab Emirates,784
+Asia,Yemen,887
+Europe,Belarus,112
+Europe,Bulgaria,100
+Europe,Czechia,203
+Europe,Hungary,348
+Europe,Poland,616
+Europe,Republic of Moldova,498
+Europe,Romania,642
+Europe,Russian Federation,643
+Europe,Slovakia,703
+Europe,Ukraine,804
+Europe,Åland Islands,248
+Europe,Denmark,208
+Europe,Estonia,233
+Europe,Faroe Islands,234
+Europe,Finland,246
+Europe,Guernsey,831
+Europe,Iceland,352
+Europe,Ireland,372
+Europe,Isle of Man,833
+Europe,Jersey,832
+Europe,Latvia,428
+Europe,Lithuania,440
+Europe,Norway,578
+Europe,Svalbard and Jan Mayen Islands,744
+Europe,Sweden,752
+Europe,United Kingdom of Great Britain and Northern Ireland,826
+Europe,Albania,8
+Europe,Andorra,20
+Europe,Bosnia and Herzegovina,70
+Europe,Croatia,191
+Europe,Gibraltar,292
+Europe,Greece,300
+Europe,Holy See,336
+Europe,Italy,380
+Europe,Malta,470
+Europe,Montenegro,499
+Europe,North Macedonia,807
+Europe,Portugal,620
+Europe,San Marino,674
+Europe,Serbia,688
+Europe,Slovenia,705
+Europe,Spain,724
+Europe,Austria,40
+Europe,Belgium,56
+Europe,France,250
+Europe,Germany,276
+Europe,Liechtenstein,438
+Europe,Luxembourg,442
+Europe,Monaco,492
+Europe,Netherlands (Kingdom of the),528
+Europe,Switzerland,756
+Oceania,Australia,36
+Oceania,Christmas Island,162
+Oceania,Cocos (Keeling) Islands,166
+Oceania,Heard Island and McDonald Islands,334
+Oceania,New Zealand,554
+Oceania,Norfolk Island,574
+Oceania,Fiji,242
+Oceania,New Caledonia,540
+Oceania,Papua New Guinea,598
+Oceania,Solomon Islands,90
+Oceania,Vanuatu,548
+Oceania,Guam,316
+Oceania,Kiribati,296
+Oceania,Marshall Islands,584
+Oceania,Micronesia (Federated States of),583
+Oceania,Nauru,520
+Oceania,Northern Mariana Islands,580
+Oceania,Palau,585
+Oceania,United States Minor Outlying Islands,581
+Oceania,American Samoa,16
+Oceania,Cook Islands,184
+Oceania,French Polynesia,258
+Oceania,Niue,570
+Oceania,Pitcairn,612
+Oceania,Samoa,882
+Oceania,Tokelau,772
+Oceania,Tonga,776
+Oceania,Tuvalu,798
+Oceania,Wallis and Futuna Islands,876
