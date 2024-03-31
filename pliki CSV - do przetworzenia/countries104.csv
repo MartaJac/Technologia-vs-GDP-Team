@@ -32,7 +32,6 @@ Africa,Morocco,MAR
 Africa,Sudan,SDN
 Africa,Tunisia,TUN
 Africa,Djibouti,DJI
-Africa,Eritrea,ERI
 Africa,Ethiopia,ETH
 Africa,Kenya,KEN
 Africa,Madagascar,MDG
@@ -44,10 +43,8 @@ Africa,Zambia,ZMB
 Africa,United Republic of Tanzania,TZA
 Africa,Uganda,UGA
 Africa,Angola,AGO
-Africa,South Sudan,SSD
 Africa,Mozambique,MOZ
 Africa,Central African Republic,CAF
-Africa,Somalia,SOM
 Africa,Rwanda,RWA
 Americas,United States of America,USA
 Americas,Canada,CAN
@@ -111,7 +108,6 @@ Asia,Mongolia,MNG
 Asia,Taiwan,TWN
 Asia,Cambodia,KHM
 Asia,Republic of Korea,KOR
-Asia,Timor-Leste,TLS
 Asia,Singapore,SGP
 Asia,Philippines,PHL
 Asia,Thailand,THA
@@ -155,6 +151,5 @@ Europe,Ireland,IRL
 Europe,Lithuania,LTU
 Europe,Russian Federation,RUS
 Europe,Slovakia,SVK
-Oceania,Papua New Guinea,PNG
 Oceania,Australia,AUS
 Oceania,New Zealand,NZL
