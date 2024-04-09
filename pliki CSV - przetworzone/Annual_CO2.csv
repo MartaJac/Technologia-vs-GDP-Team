@@ -1,4 +1,4 @@
-Country,ID_Country,Year,Annual CO₂ emissions (per capita)
+Country,ID_Country,Year,Annual CO2 emissions (per capita)
 Algeria,DZA,1970,1.0915521
 Algeria,DZA,1971,1.3216991
 Algeria,DZA,1972,1.9614357
@@ -4959,58 +4959,58 @@ Uzbekistan,UZB,2018,3.1522167
 Uzbekistan,UZB,2019,3.2880268
 Uzbekistan,UZB,2020,3.2699935
 Uzbekistan,UZB,2021,3.4149938
-"China, Hong Kong Special Administrative Region",HKG,1970,2.1219566
-"China, Hong Kong Special Administrative Region",HKG,1971,2.2714043
-"China, Hong Kong Special Administrative Region",HKG,1972,2.2468119
-"China, Hong Kong Special Administrative Region",HKG,1973,2.1929142
-"China, Hong Kong Special Administrative Region",HKG,1974,2.4563193
-"China, Hong Kong Special Administrative Region",HKG,1975,2.4730263
-"China, Hong Kong Special Administrative Region",HKG,1976,2.7397976
-"China, Hong Kong Special Administrative Region",HKG,1977,3.0448432
-"China, Hong Kong Special Administrative Region",HKG,1978,3.2951894
-"China, Hong Kong Special Administrative Region",HKG,1979,3.2502475
-"China, Hong Kong Special Administrative Region",HKG,1980,3.3343468
-"China, Hong Kong Special Administrative Region",HKG,1981,3.6663241
-"China, Hong Kong Special Administrative Region",HKG,1982,3.7977757
-"China, Hong Kong Special Administrative Region",HKG,1983,3.9816437
-"China, Hong Kong Special Administrative Region",HKG,1984,4.166957
-"China, Hong Kong Special Administrative Region",HKG,1985,4.228147
-"China, Hong Kong Special Administrative Region",HKG,1986,4.647162
-"China, Hong Kong Special Administrative Region",HKG,1987,5.0345907
-"China, Hong Kong Special Administrative Region",HKG,1988,5.168859
-"China, Hong Kong Special Administrative Region",HKG,1989,5.239474
-"China, Hong Kong Special Administrative Region",HKG,1990,4.649713
-"China, Hong Kong Special Administrative Region",HKG,1991,4.8051486
-"China, Hong Kong Special Administrative Region",HKG,1992,5.479404
-"China, Hong Kong Special Administrative Region",HKG,1993,5.710827
-"China, Hong Kong Special Administrative Region",HKG,1994,5.0382166
-"China, Hong Kong Special Administrative Region",HKG,1995,5.007649
-"China, Hong Kong Special Administrative Region",HKG,1996,4.564423
-"China, Hong Kong Special Administrative Region",HKG,1997,4.7346406
-"China, Hong Kong Special Administrative Region",HKG,1998,5.9463305
-"China, Hong Kong Special Administrative Region",HKG,1999,6.4060946
-"China, Hong Kong Special Administrative Region",HKG,2000,5.984493
-"China, Hong Kong Special Administrative Region",HKG,2001,5.5578165
-"China, Hong Kong Special Administrative Region",HKG,2002,5.765216
-"China, Hong Kong Special Administrative Region",HKG,2003,6.2735147
-"China, Hong Kong Special Administrative Region",HKG,2004,6.010616
-"China, Hong Kong Special Administrative Region",HKG,2005,6.304073
-"China, Hong Kong Special Administrative Region",HKG,2006,6.0217233
-"China, Hong Kong Special Administrative Region",HKG,2007,6.223343
-"China, Hong Kong Special Administrative Region",HKG,2008,6.069007
-"China, Hong Kong Special Administrative Region",HKG,2009,5.860711
-"China, Hong Kong Special Administrative Region",HKG,2010,5.6170006
-"China, Hong Kong Special Administrative Region",HKG,2011,6.0135875
-"China, Hong Kong Special Administrative Region",HKG,2012,5.9084454
-"China, Hong Kong Special Administrative Region",HKG,2013,6.0720825
-"China, Hong Kong Special Administrative Region",HKG,2014,6.1875186
-"China, Hong Kong Special Administrative Region",HKG,2015,5.729839
-"China, Hong Kong Special Administrative Region",HKG,2016,5.8319287
-"China, Hong Kong Special Administrative Region",HKG,2017,5.686675
-"China, Hong Kong Special Administrative Region",HKG,2018,5.6940813
-"China, Hong Kong Special Administrative Region",HKG,2019,5.589584
-"China, Hong Kong Special Administrative Region",HKG,2020,4.4657145
-"China, Hong Kong Special Administrative Region",HKG,2021,4.3732305
+China, Hong Kong Special Administrative Region,HKG,1970,2.1219566
+China, Hong Kong Special Administrative Region,HKG,1971,2.2714043
+China, Hong Kong Special Administrative Region,HKG,1972,2.2468119
+China, Hong Kong Special Administrative Region,HKG,1973,2.1929142
+China, Hong Kong Special Administrative Region,HKG,1974,2.4563193
+China, Hong Kong Special Administrative Region,HKG,1975,2.4730263
+China, Hong Kong Special Administrative Region,HKG,1976,2.7397976
+China, Hong Kong Special Administrative Region,HKG,1977,3.0448432
+China, Hong Kong Special Administrative Region,HKG,1978,3.2951894
+China, Hong Kong Special Administrative Region,HKG,1979,3.2502475
+China, Hong Kong Special Administrative Region,HKG,1980,3.3343468
+China, Hong Kong Special Administrative Region,HKG,1981,3.6663241
+China, Hong Kong Special Administrative Region,HKG,1982,3.7977757
+China, Hong Kong Special Administrative Region,HKG,1983,3.9816437
+China, Hong Kong Special Administrative Region,HKG,1984,4.166957
+China, Hong Kong Special Administrative Region,HKG,1985,4.228147
+China, Hong Kong Special Administrative Region,HKG,1986,4.647162
+China, Hong Kong Special Administrative Region,HKG,1987,5.0345907
+China, Hong Kong Special Administrative Region,HKG,1988,5.168859
+China, Hong Kong Special Administrative Region,HKG,1989,5.239474
+China, Hong Kong Special Administrative Region,HKG,1990,4.649713
+China, Hong Kong Special Administrative Region,HKG,1991,4.8051486
+China, Hong Kong Special Administrative Region,HKG,1992,5.479404
+China, Hong Kong Special Administrative Region,HKG,1993,5.710827
+China, Hong Kong Special Administrative Region,HKG,1994,5.0382166
+China, Hong Kong Special Administrative Region,HKG,1995,5.007649
+China, Hong Kong Special Administrative Region,HKG,1996,4.564423
+China, Hong Kong Special Administrative Region,HKG,1997,4.7346406
+China, Hong Kong Special Administrative Region,HKG,1998,5.9463305
+China, Hong Kong Special Administrative Region,HKG,1999,6.4060946
+China, Hong Kong Special Administrative Region,HKG,2000,5.984493
+China, Hong Kong Special Administrative Region,HKG,2001,5.5578165
+China, Hong Kong Special Administrative Region,HKG,2002,5.765216
+China, Hong Kong Special Administrative Region,HKG,2003,6.2735147
+China, Hong Kong Special Administrative Region,HKG,2004,6.010616
+China, Hong Kong Special Administrative Region,HKG,2005,6.304073
+China, Hong Kong Special Administrative Region,HKG,2006,6.0217233
+China, Hong Kong Special Administrative Region,HKG,2007,6.223343
+China, Hong Kong Special Administrative Region,HKG,2008,6.069007
+China, Hong Kong Special Administrative Region,HKG,2009,5.860711
+China, Hong Kong Special Administrative Region,HKG,2010,5.6170006
+China, Hong Kong Special Administrative Region,HKG,2011,6.0135875
+China, Hong Kong Special Administrative Region,HKG,2012,5.9084454
+China, Hong Kong Special Administrative Region,HKG,2013,6.0720825
+China, Hong Kong Special Administrative Region,HKG,2014,6.1875186
+China, Hong Kong Special Administrative Region,HKG,2015,5.729839
+China, Hong Kong Special Administrative Region,HKG,2016,5.8319287
+China, Hong Kong Special Administrative Region,HKG,2017,5.686675
+China, Hong Kong Special Administrative Region,HKG,2018,5.6940813
+China, Hong Kong Special Administrative Region,HKG,2019,5.589584
+China, Hong Kong Special Administrative Region,HKG,2020,4.4657145
+China, Hong Kong Special Administrative Region,HKG,2021,4.3732305
 Democratic People's Republic of Korea,PRK,1970,4.8994403
 Democratic People's Republic of Korea,PRK,1971,6.9858036
 Democratic People's Republic of Korea,PRK,1972,5.676231

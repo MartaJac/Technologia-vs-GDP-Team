@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="team4bigdata.database.windows.net.TechnologiaGDP.adminuser"
+  DTS:DTSID="{A4FE6772-85B1-42B5-8E14-BA1A68555E69}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=team4bigdata.database.windows.net;User ID=adminuser;Initial Catalog=TechnologiaGDP;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-SSIS dla TechnologiaGDP-{A4FE6772-85B1-42B5-8E14-BA1A68555E69}team4bigdata.database.windows.net.TechnologiaGDP.adminuser;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIUNJIaWE4E6vE73XV18RrgAAAAACAAAAAAAQZgAAAAEAACAAAADnSvJ+VyIfJEvBx968PX/8PvnrUnbSvxWp0I7A2Q0RAQAAAAAOgAAAAAIAACAAAADgt7umc7yhJWGyfCwW+QZQY2+SDochogzqTosGzu2wJoAAAACofQ5xJixPplUUFfJPOT9jnO/H2KJY70g9Bo/GweJOk+f/dkIZgwA1GQMt0/smstTKxJiWgviGh5vA0FP7hX9FH1LKMZXdHPQ6chzO7oTg6ofgOoDIDYQi0x7kUQgIVfCojG9fSyGkzw5cHsJHbI54YqXltoUKzdHpCpQXLwfuIEAAAABnJaWNiLlSW9+Bp+B3PA8bnhIBbo4N3NmHUhUgoh/dZwqYKAiXlaUbA1jyq9tZz5WS7JxvV4TN48Zkjnjahm1Q</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

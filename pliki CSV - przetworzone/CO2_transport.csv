@@ -1,4 +1,4 @@
-Country,ID_Country,Year,CO₂ emissions from transport
+Country,ID_Country,Year,CO2 emissions from transport
 Algeria,DZA,1990,15810000.0
 Algeria,DZA,1991,16880000.0
 Algeria,DZA,1992,16800000.0
@@ -3130,7 +3130,7 @@ Uzbekistan,UZB,2003,8740000.0
 Uzbekistan,UZB,2004,14450000.0
 Uzbekistan,UZB,2005,14980000.0
 Uzbekistan,UZB,2006,15760000.0
-"China, Hong Kong Special Administrative Region",HKG,2007,
+China, Hong Kong Special Administrative Region,HKG,2007,
 Democratic People's Republic of Korea,PRK,2008,5600000.0
 Democratic People's Republic of Korea,PRK,2009,4280000.0
 Democratic People's Republic of Korea,PRK,2010,3490000.0
