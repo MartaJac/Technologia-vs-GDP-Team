@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="Annual_CO2"
   DTS:DTSID="{78063A27-923F-4082-BE15-38BD05C8E0A2}"

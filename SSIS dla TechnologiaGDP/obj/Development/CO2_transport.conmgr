@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="CO2_transport"
   DTS:DTSID="{6A43E28C-013D-45FA-AD48-CBF2A04FED99}"
