@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="59"
-  DTS:VersionGUID="{D111FE32-3C4A-4E5D-B5BD-B0DDDEAB7334}">
+  DTS:VersionBuild="76"
+  DTS:VersionGUID="{B4B023C2-4671-416D-99F3-2578B263BFF1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -31,6 +31,222 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\Annual_CO2\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Annual_CO2\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Annual_CO2\Data Conversion.Inputs[Data Conversion Input].Columns[Country]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Country"
+                      lineageId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\Annual_CO2\Data Conversion.Inputs[Data Conversion Input].Columns[ID_Country]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ID_Country"
+                      lineageId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[ID_Country]" />
+                    <inputColumn
+                      refId="Package\Annual_CO2\Data Conversion.Inputs[Data Conversion Input].Columns[Year]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Year"
+                      lineageId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Year]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Annual_CO2\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Output].Columns[change_type_Country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Output].Columns[change_type_Country]"
+                      name="change_type_Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Country]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Output].Columns[change_type_ID_Country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Output].Columns[change_type_ID_Country]"
+                      name="change_type_ID_Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[ID_Country]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Output].Columns[change_type_Year]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Output].Columns[change_type_Year]"
+                      name="change_type_Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Year]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Annual_CO2\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Annual_CO2\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Annual_CO2\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Annual_CO2\Derived Column.Inputs[Derived Column Input].Columns[Annual CO2 emissions (per capita)]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Annual CO2 emissions (per capita)"
+                      lineageId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Annual CO2 emissions (per capita)]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Annual_CO2\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Annual_CO2\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Annual_CO2\Derived Column.Outputs[Derived Column Output].Columns[new_column Annual CO2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="102"
+                      lineageId="Package\Annual_CO2\Derived Column.Outputs[Derived Column Output].Columns[new_column Annual CO2]"
+                      name="new_column Annual CO2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL](#{Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Annual CO2 emissions (per capita)]},"0")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL([Annual CO2 emissions (per capita)],"0")</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Annual_CO2\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Annual_CO2\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Annual_CO2\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Annual_CO2\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Annual_CO2\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Annual_CO2\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\Annual_CO2\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
@@ -53,8 +269,8 @@
               <connections>
                 <connection
                   refId="Package\Annual_CO2\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{E29ABB08-1FD2-4461-83F4-6099C2A55AD5}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Annual_CO2 test]"
+                  connectionManagerID="{FD41638A-67B5-475C-B3F5-A62D47290C7E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Annual CO2_test]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -64,7 +280,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -86,7 +302,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[ID_Country]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -108,7 +324,8 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
-                      dataType="wstr"
+                      codePage="65001"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
@@ -129,7 +346,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Annual CO2 emissions (per capita)]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -154,23 +371,25 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       length="100"
                       name="Country" />
                     <externalMetadataColumn
                       refId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ID_Country]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="ID_Country" />
                     <externalMetadataColumn
                       refId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      dataType="r4"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
                       name="Year" />
                     <externalMetadataColumn
                       refId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Annual CO2 emissions (per capita)]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="Annual CO2 emissions (per capita)" />
@@ -221,7 +440,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[OLE DB Destination]</property>
+                  name="OpenRowset">[dbo].[Annual_CO2 test]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -264,7 +483,7 @@
               <connections>
                 <connection
                   refId="Package\Annual_CO2\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{781AC9EE-D6B1-42C6-9BBB-F1A2DC15AF15}:external"
+                  connectionManagerID="{11E546BC-0ECC-449C-8AA0-88485838A774}:external"
                   connectionManagerRefId="Project.ConnectionManagers[team4bigdata.database.windows.net.TechnologiaGDP.adminuser]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -278,62 +497,53 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="Country"
-                      externalMetadataColumnId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
-                      lineageId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
-                    <inputColumn
-                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ID_Country]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="ID_Country"
-                      externalMetadataColumnId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_Country]"
-                      lineageId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[ID_Country]" />
-                    <inputColumn
-                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year]"
+                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[change_type_ID_Country]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Year"
-                      externalMetadataColumnId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
-                      lineageId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Year]" />
+                      cachedLength="255"
+                      cachedName="change_type_ID_Country"
+                      externalMetadataColumnId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_Country]"
+                      lineageId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Output].Columns[change_type_ID_Country]" />
                     <inputColumn
-                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Annual CO2 emissions (per capita)]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Annual CO2 emissions (per capita)"
-                      externalMetadataColumnId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Annual CO2 emissions (per capita)]"
-                      lineageId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output].Columns[Annual CO2 emissions (per capita)]" />
+                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[change_type_Country]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="change_type_Country"
+                      externalMetadataColumnId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Output].Columns[change_type_Country]" />
+                    <inputColumn
+                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[change_type_Year]"
+                      cachedDataType="r4"
+                      cachedName="change_type_Year"
+                      externalMetadataColumnId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Output].Columns[change_type_Year]" />
+                    <inputColumn
+                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[new_column Annual CO2]"
+                      cachedDataType="wstr"
+                      cachedLength="102"
+                      cachedName="new_column Annual CO2"
+                      externalMetadataColumnId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Annual CO2 emissions]"
+                      lineageId="Package\Annual_CO2\Derived Column.Outputs[Derived Column Output].Columns[new_column Annual CO2]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
-                      codePage="1252"
-                      dataType="str"
-                      length="100"
-                      name="Country" />
-                    <externalMetadataColumn
                       refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_Country]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="wstr"
+                      length="255"
                       name="ID_Country" />
                     <externalMetadataColumn
-                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
                       dataType="wstr"
-                      length="50"
+                      length="255"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      dataType="r8"
                       name="Year" />
                     <externalMetadataColumn
-                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Annual CO2 emissions (per capita)]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Annual CO2 emissions (per capita)" />
+                      refId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Annual CO2 emissions]"
+                      dataType="r8"
+                      name="Annual CO2 emissions" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -365,8 +575,18 @@
           </components>
           <paths>
             <path
-              refId="Package\Annual_CO2.Paths[Flat File Source Output]"
+              refId="Package\Annual_CO2.Paths[Data Conversion Output]"
               endId="Package\Annual_CO2\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Annual_CO2\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Annual_CO2.Paths[Derived Column Output]"
+              endId="Package\Annual_CO2\Data Conversion.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\Annual_CO2\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Annual_CO2.Paths[Flat File Source Output]"
+              endId="Package\Annual_CO2\Derived Column.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\Annual_CO2\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
@@ -388,6 +608,222 @@
           version="1">
           <components>
             <component
+              refId="Package\CO2_transport\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CO2_transport\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CO2_transport\Data Conversion.Inputs[Data Conversion Input].Columns[Country]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Country"
+                      lineageId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\CO2_transport\Data Conversion.Inputs[Data Conversion Input].Columns[ID_Country]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ID_Country"
+                      lineageId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[ID_Country]" />
+                    <inputColumn
+                      refId="Package\CO2_transport\Data Conversion.Inputs[Data Conversion Input].Columns[Year]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Year"
+                      lineageId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[Year]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\CO2_transport\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Country]"
+                      name="Copy of Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[Country]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of ID_Country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of ID_Country]"
+                      name="Copy of ID_Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[ID_Country]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Year]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Year]"
+                      name="Copy of Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[Year]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\CO2_transport\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CO2_transport\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CO2_transport\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CO2_transport\Derived Column.Inputs[Derived Column Input].Columns[CO2 emissions from transport]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CO2 emissions from transport"
+                      lineageId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[CO2 emissions from transport]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CO2_transport\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\CO2_transport\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CO2_transport\Derived Column.Outputs[Derived Column Output].Columns[new_column_CO2 emissions]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="102"
+                      lineageId="Package\CO2_transport\Derived Column.Outputs[Derived Column Output].Columns[new_column_CO2 emissions]"
+                      name="new_column_CO2 emissions"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL](#{Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[CO2 emissions from transport]},"0")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL([CO2 emissions from transport],"0")</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CO2_transport\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\CO2_transport\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CO2_transport\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CO2_transport\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CO2_transport\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CO2_transport\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\CO2_transport\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -400,7 +836,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">false</property>
+                  name="RetainNulls">true</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
@@ -409,8 +845,8 @@
               <connections>
                 <connection
                   refId="Package\CO2_transport\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{6A43E28C-013D-45FA-AD48-CBF2A04FED99}:invalid"
-                  connectionManagerRefId="{6A43E28C-013D-45FA-AD48-CBF2A04FED99}:invalid"
+                  connectionManagerID="{85A759A9-725A-43DB-A09B-8048A0CA5A0F}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CO2_transport test]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -420,12 +856,12 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
                       name="Country"
                       truncationRowDisposition="FailComponent">
@@ -442,7 +878,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[ID_Country]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -464,7 +900,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -486,7 +922,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[CO2 emissions from transport]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -511,25 +947,25 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
-                      length="50"
+                      length="100"
                       name="Country" />
                     <externalMetadataColumn
                       refId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ID_Country]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="ID_Country" />
                     <externalMetadataColumn
                       refId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="Year" />
                     <externalMetadataColumn
                       refId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CO2 emissions from transport]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="str"
                       length="50"
                       name="CO2 emissions from transport" />
@@ -542,7 +978,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="1250"
+                      codePage="65001"
                       dataType="text"
                       description="Flat File Source Error Output Column"
                       lineageId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
@@ -580,7 +1016,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[CO2_transport]</property>
+                  name="OpenRowset">[dbo].[CO2_transport test]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -623,8 +1059,8 @@
               <connections>
                 <connection
                   refId="Package\CO2_transport\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{5FD92904-7C6B-44C5-9EA7-98B4834CF918}:invalid"
-                  connectionManagerRefId="{5FD92904-7C6B-44C5-9EA7-98B4834CF918}:invalid"
+                  connectionManagerID="{11E546BC-0ECC-449C-8AA0-88485838A774}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[team4bigdata.database.windows.net.TechnologiaGDP.adminuser]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -637,63 +1073,53 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Country"
-                      externalMetadataColumnId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
-                      lineageId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
-                    <inputColumn
-                      refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ID_Country]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="ID_Country"
+                      refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of ID_Country]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Copy of ID_Country"
                       externalMetadataColumnId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_Country]"
-                      lineageId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[ID_Country]" />
+                      lineageId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of ID_Country]" />
                     <inputColumn
-                      refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Year"
+                      refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Country]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Copy of Country"
+                      externalMetadataColumnId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Country]" />
+                    <inputColumn
+                      refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Year]"
+                      cachedDataType="r4"
+                      cachedName="Copy of Year"
                       externalMetadataColumnId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
-                      lineageId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[Year]" />
+                      lineageId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Year]" />
                     <inputColumn
-                      refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CO2 emissions from transport]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="CO2 emissions from transport"
+                      refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[new_column_CO2 emissions]"
+                      cachedDataType="wstr"
+                      cachedLength="102"
+                      cachedName="new_column_CO2 emissions"
                       externalMetadataColumnId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CO2 emissions from transport]"
-                      lineageId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output].Columns[CO2 emissions from transport]" />
+                      lineageId="Package\CO2_transport\Derived Column.Outputs[Derived Column Output].Columns[new_column_CO2 emissions]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_Country]"
-                      codePage="1252"
-                      dataType="str"
-                      length="3"
+                      dataType="wstr"
+                      length="255"
                       name="ID_Country" />
                     <externalMetadataColumn
                       refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="wstr"
+                      length="255"
                       name="Country" />
                     <externalMetadataColumn
                       refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
-                      dataType="wstr"
-                      length="10"
+                      dataType="r8"
                       name="Year" />
                     <externalMetadataColumn
                       refId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CO2 emissions from transport]"
-                      dataType="numeric"
-                      name="CO2 emissions from transport"
-                      precision="18"
-                      scale="3" />
+                      dataType="r8"
+                      name="CO2 emissions from transport" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -725,8 +1151,18 @@
           </components>
           <paths>
             <path
-              refId="Package\CO2_transport.Paths[Flat File Source Output]"
+              refId="Package\CO2_transport.Paths[Data Conversion Output]"
               endId="Package\CO2_transport\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\CO2_transport\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\CO2_transport.Paths[Derived Column Output]"
+              endId="Package\CO2_transport\Data Conversion.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\CO2_transport\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\CO2_transport.Paths[Flat File Source Output]"
+              endId="Package\CO2_transport\Derived Column.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\CO2_transport\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
@@ -964,29 +1400,81 @@
     design-time-name="Package\Annual_CO2">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Annual_CO2\Data Conversion"
+          TopLeft="652,148" />
         <NodeLayout
           Size="151,42"
           Id="Package\Annual_CO2\Flat File Source"
-          TopLeft="240,92" />
+          TopLeft="204,148" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\Annual_CO2\OLE DB Destination"
-          TopLeft="486,86" />
+          Size="154,42"
+          Id="Package\Annual_CO2\Derived Column"
+          TopLeft="397,149" />
         <EdgeLayout
           Id="Package\Annual_CO2.Paths[Flat File Source Output]"
-          TopLeft="391,110">
+          TopLeft="355,169.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="95,0"
+              EndConnector="42,0"
               Start="0,0"
-              End="87.5,0">
+              End="34.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="87.5,0" />
+                    End="34.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Annual_CO2.Paths[Derived Column Output]"
+          TopLeft="551,169.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="101,0"
+              Start="0,0"
+              End="93.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="93.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Annual_CO2\OLE DB Destination"
+          TopLeft="891,150" />
+        <EdgeLayout
+          Id="Package\Annual_CO2.Paths[Data Conversion Output]"
+          TopLeft="808,170">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="83,0"
+              Start="0,0"
+              End="75.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="75.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1002,44 +1490,106 @@
     design-time-name="Package\CO2_transport">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="171,42"
-          Id="Package\CO2_transport\OLE DB Destination"
-          TopLeft="410,85" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
           Id="Package\CO2_transport\Flat File Source"
-          TopLeft="163,87" />
+          TopLeft="157,101" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\CO2_transport\Data Conversion"
+          TopLeft="619,102" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\CO2_transport\Derived Column"
+          TopLeft="380,102" />
         <EdgeLayout
           Id="Package\CO2_transport.Paths[Flat File Source Output]"
-          TopLeft="314,107">
+          TopLeft="308,122.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="96,0"
+              EndConnector="72,0"
               Start="0,0"
-              End="88.5,0">
+              End="64.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="88.5,0" />
+                    End="64.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CO2_transport.Paths[Derived Column Output]"
+          TopLeft="534,123">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="85,0"
+              Start="0,0"
+              End="77.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="77.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\CO2_transport\OLE DB Destination"
+          TopLeft="857,121" />
+        <EdgeLayout
+          Id="Package\CO2_transport.Paths[Data Conversion Output]"
+          TopLeft="775,123">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="82,19"
+              Start="0,0"
+              End="74.5,19">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="37,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="37,0"
+                    Point2="41,0"
+                    Point3="41,4" />
+                  <mssgle:LineSegment
+                    End="41,15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41,15"
+                    Point2="41,19"
+                    Point3="45,19" />
+                  <mssgle:LineSegment
+                    End="74.5,19" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\CO2_transport\OLE DB Destination">
+    design-time-name="Package\Annual_CO2\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1052,7 +1602,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Annual_CO2\OLE DB Destination">
+    design-time-name="Package\CO2_transport\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="Annual_CO2"
-  DTS:DTSID="{78063A27-923F-4082-BE15-38BD05C8E0A2}"
+  DTS:DTSID="{333CE3EA-51AB-4AE2-8872-E67E83FB73AF}"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>
     <DTS:ConnectionManager
@@ -12,16 +12,16 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x003C_none_x003E_"
       DTS:CodePage="65001"
-      DTS:ConnectionString="C:\Users\Mama\Desktop\Annual_CO2.csv">
+      DTS:ConnectionString="D:\Repositorium\Projekt_UWSB\Technologia-vs-GDP-Team\pliki CSV - przetworzone\Annual_CO2.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
           DTS:ColumnDelimiter="_x002C_"
-          DTS:MaximumWidth="50"
+          DTS:MaximumWidth="100"
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Country"
-          DTS:DTSID="{BC5197F9-077A-4DD9-83F6-A4BEB37D6D77}"
+          DTS:DTSID="{2288054C-09CB-4099-9B61-2871D981C651}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="ID_Country"
-          DTS:DTSID="{CE4FEAFB-5365-4860-ABF4-AF8A003834DD}"
+          DTS:DTSID="{1717E15F-43F2-42E8-9FED-BBC982E9E012}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Year"
-          DTS:DTSID="{DB72D591-B148-4D3F-BD28-D1A134E0FBCC}"
+          DTS:DTSID="{C763C54D-D2CE-4A3C-AC6E-FB64E45F284D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Annual CO2 emissions (per capita)"
-          DTS:DTSID="{A7F72426-449E-4D66-892D-D067ACF8CA6D}"
+          DTS:DTSID="{8E018E31-2065-4C00-877A-F4887A381B45}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

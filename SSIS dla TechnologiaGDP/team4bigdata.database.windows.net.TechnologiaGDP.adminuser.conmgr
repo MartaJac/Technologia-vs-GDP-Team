@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="team4bigdata.database.windows.net.TechnologiaGDP.adminuser"
-  DTS:DTSID="{781AC9EE-D6B1-42C6-9BBB-F1A2DC15AF15}"
+  DTS:DTSID="{11E546BC-0ECC-449C-8AA0-88485838A774}"
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=team4bigdata.database.windows.net;User ID=adminuser;Initial Catalog=TechnologiaGDP;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-SSIS dla TechnologiaGDP-{781AC9EE-D6B1-42C6-9BBB-F1A2DC15AF15}team4bigdata.database.windows.net.TechnologiaGDP.adminuser;Auto Translate=False;">
+      DTS:ConnectionString="Data Source=team4bigdata.database.windows.net;User ID=adminuser;Initial Catalog=TechnologiaGDP;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-SSIS dla TechnologiaGDP-{11E546BC-0ECC-449C-8AA0-88485838A774}team4bigdata.database.windows.net.TechnologiaGDP.adminuser;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/PzJbtf5i0m2pvSxz+CuewAAAAACAAAAAAAQZgAAAAEAACAAAABKVsnQPgvHqn3avRyTDLYIUUPC7vewPY2cyNlJonrpmgAAAAAOgAAAAAIAACAAAABDSdrek4YxVrnYJ2Vof62oNaYEI6isLnr1DAOy4BY6FIAAAACQwj6TVllTm1aihzJsoDcotmLjjAP+cDy/1+mrD21HZnfmM4H9jI9K6Hhax+TrFdtBdECsRzEYqtejwfoLWhdOy0IKnyth8+6jcAxycy6kTL2yqkQ/kFzftT+Zcqo5np7fm+pwHByw6YRXzZVXo1LBotnPdwn2LC8EkssTUZRpHEAAAAAmTThBH3d0kb3GWuN/ABoposPhwQkbbNIRuBYgHFWW5WI5qbZT54RgsLrJEWvcOTtKBaPlbQJ3umG2jIMkvXM+</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/PzJbtf5i0m2pvSxz+CuewAAAAACAAAAAAAQZgAAAAEAACAAAAAZshVknTLbLelAFmh8Rdl8pIDI/Gf/HLVjpN/TDfXTIQAAAAAOgAAAAAIAACAAAACu+QCP/6lcWp1+5nRuQzCU6tYiXhm0L974ldupgE7ypIAAAAB06qOtN2jjR1KtfLnB17VzSsHx6/3nWtKRc9m6zcd8FFSPRtTY/qpxEqoyTrVp8D9fAzXybbEwXbg+qwTgMfQ5MxETjCVyKm7pvJ3/Zfq/dSS9uZo0D41bIBc/W+RnLzHHLJW8YO8LM36D6Tzhh8nibgiIsVq7MUqDe5rAty/H9UAAAAASCOYeOeJeGtRpl7B4NS/Cqsc6CpdGositwiA/aP6UR+7pHzx/ZW5y/TqABZn2xnDz2MkRAzVzVUDmvSvM7bER</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
