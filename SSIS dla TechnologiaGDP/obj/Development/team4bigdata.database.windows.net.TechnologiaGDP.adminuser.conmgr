@@ -10,7 +10,7 @@
       DTS:ConnectionString="Data Source=team4bigdata.database.windows.net;User ID=adminuser;Initial Catalog=TechnologiaGDP;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-SSIS dla TechnologiaGDP-{010D8374-5741-4771-B736-950964B13F2C}team4bigdata.database.windows.net.TechnologiaGDP.adminuser;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/PzJbtf5i0m2pvSxz+CuewAAAAACAAAAAAAQZgAAAAEAACAAAACnOzOPcXECHup0uxkveYKG5yxOgtp1tLwQvnJlVqL+ZQAAAAAOgAAAAAIAACAAAABiwnROfosV1fxQr7XY+u8ePYKRe176Q2OUAo7vJpso3oAAAACl7EkozTpGLUl0RyV0YqsW0PPK8HWERu2cfoNIGXV1VSvHclKkXZy0sN7WouXBOzS00ZuOvxeIrWhj1R/kZVJtFIdsYj3xquB9f5Rqk7BhezTtIV2tPnylOgTlbp4uGmzhjHdL0PVz68bBRx/4IeloblRXWdcKlvHxJsyTZ/7Fx0AAAADhqznBaI9omH74k+pRPaKmH10Bs/ARyLFwW7YgL2b030l+UPjmXI7w2BgPJ5sfhuGJLQkyJBSPSsE7nzJRKhoW</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/PzJbtf5i0m2pvSxz+CuewAAAAACAAAAAAAQZgAAAAEAACAAAAAdEoE46K7nfDnO/kAuZ8RvOQzEHa0auqEbIwpaJss6/QAAAAAOgAAAAAIAACAAAACcHQTbfCYuJSusTSYLLYR+UYd7eWsO27uyEm2KtWHPJYAAAADZqaTxF27W15jN0ZosKpR7IYi99NiGtNzyfckktB/28j3G9euKqY8R5SMkovjhH1qXdoL4HqXp7DsRJuBinNjsk2B2PKwmNRTMtmC8R4m7R5qd0qAtkqKpfuVm8oFjBnaxN/pN9YIsdkwg1ZCQAo+4V5kxxzJpIufpfLzIzTMYSEAAAADmvSNfLcSEmlWji1U1YeoV2Zkh4XWXzzKf+UjSkgzvbNRVM3reiuueCWvnxUHMj5mesIKAgw7ueAxs6mat000d</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
