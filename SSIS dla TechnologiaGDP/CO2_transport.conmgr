@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="Annual CO2_test"
-  DTS:DTSID="{FD41638A-67B5-475C-B3F5-A62D47290C7E}"
+  DTS:ObjectName="CO2_transport"
+  DTS:DTSID="{85A759A9-725A-43DB-A09B-8048A0CA5A0F}"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>
     <DTS:ConnectionManager
@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x003C_none_x003E_"
       DTS:CodePage="65001"
-      DTS:ConnectionString="D:\Repositorium\Projekt_UWSB\Technologia-vs-GDP-Team\pliki CSV - przetworzone\Annual_CO2 test.csv">
+      DTS:ConnectionString="D:\Repositorium\Projekt_UWSB\Technologia-vs-GDP-Team\pliki CSV - przetworzone\CO2_transport test.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,7 +21,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Country"
-          DTS:DTSID="{6D180A36-BA28-4F72-8ABD-7D5694E351D8}"
+          DTS:DTSID="{A5D9685D-F36E-4AF2-94F2-3C9A5740E03F}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="ID_Country"
-          DTS:DTSID="{38485EA0-E221-476B-9FB1-2454FD60C742}"
+          DTS:DTSID="{E46FDA3F-991D-4D36-A4F3-E43EBD9BEA31}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Year"
-          DTS:DTSID="{EEA8F19C-55D7-469D-B827-2BF1DE1EA256}"
+          DTS:DTSID="{BA4F194B-C787-4B8E-94E1-912E24EB08AB}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -47,8 +47,8 @@
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="Annual CO2 emissions (per capita)"
-          DTS:DTSID="{72C01F92-6F69-4554-9844-B6F27C935B9A}"
+          DTS:ObjectName="CO2 emissions from transport"
+          DTS:DTSID="{C00D81A4-A6FF-426C-8461-53D2BA0B6798}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>
