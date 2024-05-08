@@ -1,7 +1,7 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="New_Vehicles_Types test"
-  DTS:DTSID="{6CA73DFA-3704-48EE-A43C-0ABDF79AB9F8}"
+  DTS:ObjectName="PKB 1970-2019 test"
+  DTS:DTSID="{ECF414B5-05CB-4CF6-BC47-FE14A9FEB36B}"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>
     <DTS:ConnectionManager
@@ -12,8 +12,26 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x003C_none_x003E_"
       DTS:CodePage="65001"
-      DTS:ConnectionString="C:\Users\Mama\Desktop\od Agi\testy\New_Vehicles_Types test.csv">
+      DTS:ConnectionString="D:\Repositorium\Projekt_UWSB\Technologia-vs-GDP-Team\pliki CSV - przetworzone\PKB 1970-2019 merged 01_04 test.csv">
       <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Column 0"
+          DTS:DTSID="{BAE80F01-EF6F-4CD6-A4BB-12E723C91457}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Unnamed  0"
+          DTS:DTSID="{99C3E74B-A736-433C-9B96-5523A4FC457C}"
+          DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
           DTS:ColumnDelimiter="_x002C_"
@@ -21,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Country"
-          DTS:DTSID="{F7D5ADC0-5AA6-46EC-973E-D7BFD3174018}"
+          DTS:DTSID="{BEC6B9A1-B556-4B98-B1A0-04EB531E13AB}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +48,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="ID_Country"
-          DTS:DTSID="{01E3E353-7FCF-41BF-8A65-138CB386A2CA}"
+          DTS:DTSID="{DF9ADC58-3820-4E00-B4DA-58569B082E22}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +57,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Year"
-          DTS:DTSID="{2E9CC84E-CD50-41F3-9EDA-B7B80854CA06}"
+          DTS:DTSID="{53B413C0-C8C1-4108-86ED-0FA7427C4D29}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -47,8 +65,8 @@
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="Battery_Electric"
-          DTS:DTSID="{9C8B904F-F9F2-4857-BEDF-A3EEC5ED58DF}"
+          DTS:ObjectName="GDP per capita"
+          DTS:DTSID="{8F8B8E5A-36A5-4396-BAF3-434DC5FD463A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -56,26 +74,8 @@
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="Plugin_Hybrid"
-          DTS:DTSID="{4E93098B-85D2-4925-836B-2F57712E07A7}"
-          DTS:CreationName="" />
-        <DTS:FlatFileColumn
-          DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
-          DTS:MaximumWidth="50"
-          DTS:DataType="129"
-          DTS:TextQualified="True"
-          DTS:ObjectName="Full_Mild_Hybrid"
-          DTS:DTSID="{4B9E2DCE-52C0-4F92-81E7-60C8252E0658}"
-          DTS:CreationName="" />
-        <DTS:FlatFileColumn
-          DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x002C_"
-          DTS:MaximumWidth="50"
-          DTS:DataType="129"
-          DTS:TextQualified="True"
-          DTS:ObjectName="Petrol"
-          DTS:DTSID="{D8A67790-0742-4E49-9926-225D328EB64A}"
+          DTS:ObjectName="Population"
+          DTS:DTSID="{F537C7E5-8D50-4822-A643-09F1FF5BC028}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -83,8 +83,8 @@
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="Diesel"
-          DTS:DTSID="{B1C01048-1AF0-41D4-ACCF-49E3895BBB96}"
+          DTS:ObjectName="GDP"
+          DTS:DTSID="{A679BA63-DDDE-4EC6-88FB-6476CE8D4F83}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

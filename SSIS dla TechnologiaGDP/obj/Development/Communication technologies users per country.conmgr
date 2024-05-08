@@ -1,7 +1,7 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="New_Vehicles_Types test"
-  DTS:DTSID="{6CA73DFA-3704-48EE-A43C-0ABDF79AB9F8}"
+  DTS:ObjectName="Communication technologies users per country test"
+  DTS:DTSID="{E409942A-1DC8-4146-A6E2-C772DA4B63CB}"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>
     <DTS:ConnectionManager
@@ -12,8 +12,17 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x003C_none_x003E_"
       DTS:CodePage="65001"
-      DTS:ConnectionString="C:\Users\Mama\Desktop\od Agi\testy\New_Vehicles_Types test.csv">
+      DTS:ConnectionString="D:\Repositorium\Projekt_UWSB\Technologia-vs-GDP-Team\pliki CSV - przetworzone\Communication technologies users per country test.csv">
       <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Column 0"
+          DTS:DTSID="{5DD04D41-5F51-44D1-8C7B-A880665263A6}"
+          DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
           DTS:ColumnDelimiter="_x002C_"
@@ -21,7 +30,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Country"
-          DTS:DTSID="{F7D5ADC0-5AA6-46EC-973E-D7BFD3174018}"
+          DTS:DTSID="{483E8AD3-47C0-441F-819B-4F2EBB75618F}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="ID_Country"
-          DTS:DTSID="{01E3E353-7FCF-41BF-8A65-138CB386A2CA}"
+          DTS:DTSID="{4526728B-45DA-42CC-9B53-D0746B8F0D9C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +48,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Year"
-          DTS:DTSID="{2E9CC84E-CD50-41F3-9EDA-B7B80854CA06}"
+          DTS:DTSID="{07FD192F-4884-4E8C-BCA3-061DB50D18D8}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -47,8 +56,8 @@
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="Battery_Electric"
-          DTS:DTSID="{9C8B904F-F9F2-4857-BEDF-A3EEC5ED58DF}"
+          DTS:ObjectName="Fixed_telephone_subscriptions"
+          DTS:DTSID="{89DD97EA-7CDE-459F-8347-01E9FDB587EF}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -56,8 +65,8 @@
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="Plugin_Hybrid"
-          DTS:DTSID="{4E93098B-85D2-4925-836B-2F57712E07A7}"
+          DTS:ObjectName="Fixed_broadband_subscriptions"
+          DTS:DTSID="{7598A65E-990D-43C5-A48A-954CB41AE510}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -65,8 +74,8 @@
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="Full_Mild_Hybrid"
-          DTS:DTSID="{4B9E2DCE-52C0-4F92-81E7-60C8252E0658}"
+          DTS:ObjectName="Mobile_cellular_subscriptions"
+          DTS:DTSID="{D3F178CF-B519-4914-964E-4AD914C68193}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -74,8 +83,17 @@
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="Petrol"
-          DTS:DTSID="{D8A67790-0742-4E49-9926-225D328EB64A}"
+          DTS:ObjectName="Fixed_telephone_subscriptions_(per_100_people)"
+          DTS:DTSID="{F2163193-28A8-460F-B80F-BB5D2C29CF26}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Fixed_broa_band_subscriptions_(per_100_people)"
+          DTS:DTSID="{5CAA2FEB-B040-44C4-AB43-A8A87834A167}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -83,8 +101,8 @@
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
-          DTS:ObjectName="Diesel"
-          DTS:DTSID="{B1C01048-1AF0-41D4-ACCF-49E3895BBB96}"
+          DTS:ObjectName="Mobile_cellular_subscriptions_(per_100_people)"
+          DTS:DTSID="{677C4511-01EA-4083-8F5F-F21A080D27E4}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

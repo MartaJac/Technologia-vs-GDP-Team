@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="New_Vehicles_Types test"
   DTS:DTSID="{6CA73DFA-3704-48EE-A43C-0ABDF79AB9F8}"

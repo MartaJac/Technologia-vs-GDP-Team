@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="144"
-  DTS:VersionGUID="{89506158-3B75-4E79-A124-6A9B564C670F}">
+  DTS:VersionBuild="146"
+  DTS:VersionGUID="{171DCA5D-7D20-41F9-BCA1-14DC9530D4C3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -733,8 +733,8 @@
               <connections>
                 <connection
                   refId="Package\Annual_CO2\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{FD41638A-67B5-475C-B3F5-A62D47290C7E}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Annual CO2_test]"
+                  connectionManagerID="{FD41638A-67B5-475C-B3F5-A62D47290C7E}:invalid"
+                  connectionManagerRefId="{FD41638A-67B5-475C-B3F5-A62D47290C7E}:invalid"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -1310,7 +1310,7 @@
                 <connection
                   refId="Package\CO2_transport\Flat File Source.Connections[FlatFileConnection]"
                   connectionManagerID="{85A759A9-725A-43DB-A09B-8048A0CA5A0F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[CO2_transport test]"
+                  connectionManagerRefId="Project.ConnectionManagers[CO2_transport]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -6116,7 +6116,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[New_Vehicles_Types]</property>
+                  name="OpenRowset">[dbo].[New_Vehicles_Types test]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -6159,8 +6159,8 @@
               <connections>
                 <connection
                   refId="Package\New_Vehicles_Types\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{63A20D5A-5754-4CE5-AD46-F4338D4FFEFF}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[team4bigdata.database.windows.net.TechnologiaGDP_1.adminuser]"
+                  connectionManagerID="{AA9B314A-B6D1-4776-BB2C-003D4A9DBAB3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[team4bigdata.database.windows.net.TechnologiaGDP.adminuser]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -7543,6 +7543,50 @@
           Id="Package\Registered_Vehicles_per_1000"
           TopLeft="551,356" />
         <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="271,96.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55,0"
+              Start="0,0"
+              End="47.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="47.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="473,96.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="39,0"
+              Start="0,0"
+              End="31.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="31.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10]"
           TopLeft="774,377">
           <EdgeLayout.Curve>
@@ -7590,6 +7634,28 @@
                     Point3="-740,45.5" />
                   <mssgle:LineSegment
                     End="-740,75.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="811,96">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="61,0"
+              Start="0,0"
+              End="53.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="53.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7780,72 +7846,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="49.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="271,96.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="55,0"
-              Start="0,0"
-              End="47.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="47.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="473,96.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="39,0"
-              Start="0,0"
-              End="31.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="31.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="811,96">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="61,0"
-              Start="0,0"
-              End="53.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="53.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
