@@ -16,9 +16,9 @@
 
 **3. Osoba odpowiedzialna za przygotowanie tabel w bazie danych + przetwarzanie danych w SQL + ETL (Adrian):**
 
-**4. Dwie osoby odpowiedzialne za wizualizację danych w PowerBI (Aga i Marta):**
+**4. Osoba odpowiedzialna za wizualizację danych w PowerBI (Aga):**
 - Import danych z analizy wykonanej w MySQL do narzędzia PowerBI
-- Tworzenie interaktywnych dashboardów prezentujących zależności między technologią a PKB oraz efektywnością środków transportu (2 lub 3 dashboardy – technologia komunikacyjna a PKB, dostęp do środków transportu i ich efektywność energetyczna, a trzeci wykazanie zależności pomiędzy tymi dwoma tematami)
+- Tworzenie interaktywnych dashboardów prezentujących zależności między technologią a PKB oraz efektywnością środków transportu
 - Publikacja raportu w PowerBI dla użytkowników
 
 **5. Aga:**
@@ -26,16 +26,15 @@
 - do prezentacji: Diagram dobranej architektury rozwiązania wykonany w draw.io
   
 > ## Cel projektu: Badanie związku między dostępem do technologii komunikacyjnych oraz środków transportu a dynamiką wzrostu gospodarczego, z uwzględnieniem efektywności energetycznej i emisyjności.
+**Dostęp do środków transportu i ich efektywność energetyczna/emisyjność:**
+- Analiza dynamiki wzrostu gospodarczego (GDP) na przestrzeni lat oraz emisyjności C02.
+- Ocena efektywności energetycznej różnych środków transportu
+- Badanie ewentualnych korelacji między dostępem do środków transportu, ich efektywnością energetyczną, a wzrostem gospodarczym
+
 **Dostęp do technologii komunikacyjnych vs. GDP w czasie:**
 - Analiza dynamiki wzrostu gospodarczego (GDP) na przestrzeni lat
 - Ocena dostępu do różnych technologii komunikacyjnych, takich jak internet, telefonia komórkowa, etc
 - Identifikacja ewentualnych zależności między rozwojem technologii komunikacyjnych a wzrostem gospodarczym
-
-**Dostęp do środków transportu i ich efektywność energetyczna/emisyjność:**
-- Analiza danych dotyczących dostępu do różnych środków transportu (samochody, transport publiczny, rowery, etc.)
-- Ocena efektywności energetycznej różnych środków transportu
-- Analiza emisyjności związanej z korzystaniem z różnych środków transportu
-- Badanie ewentualnych korelacji między dostępem do środków transportu, ich efektywnością energetyczną, a wzrostem gospodarczym
 
 **Projekt dostarczy istotnych informacji na temat wpływu dostępu do nowoczesnych technologii komunikacyjnych i środków transportu na rozwój gospodarczy, jednocześnie zwracając uwagę na aspekty zrównoważonego rozwoju, takie jak efektywność energetyczna i emisyjność.**
 
